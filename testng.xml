@@ -1,0 +1,20 @@
+<suite name = "ParallelTest" parallel="tests" thread-count="2">
+    <test name = "Calculator test on device one">
+        <classes>
+            <parameter name="platform_name" value="ANDROID"></parameter>
+            <parameter name="platform_version" value="9.0"></parameter>
+            <parameter name="deviceName" value="emulator-5554"></parameter>
+            <parameter name="appiumURL" value="http://127.0.0.1:4725/wd/hub"></parameter>
+            <class name="AppiumDay2.ParallelExecutionInAppium"></class>
+        </classes>
+    </test>
+    <test name = "Calculator test on device two">
+        <classes>
+            <parameter name="platform_name" value="ANDROID"></parameter>
+            <parameter name="platform_version" value="9.0"></parameter>
+            <parameter name="deviceName" value="emulator-5556"></parameter>
+            <parameter name="appiumURL" value="http://127.0.0.1:4726/wd/hub"></parameter>
+            <class name="AppiumDay2.ParallelExecutionInAppium"></class>
+        </classes>
+    </test>
+</suite>
