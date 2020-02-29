@@ -66,7 +66,7 @@ public class AppiumMobileGestures {
 
 
         driver.lockDevice();
-//        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 //        driver.unlockDevice();
 //
 //        driver.openNotifications();

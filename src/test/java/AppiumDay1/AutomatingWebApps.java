@@ -25,8 +25,6 @@ AndroidDriver driver;
         cap.setCapability("chromedriverExecutable", "/Users/swati.kalra/Documents/Selenium-Appium/chromedriver");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-
-
     }
 
     @Test
@@ -35,7 +33,7 @@ AndroidDriver driver;
         driver.get("https://www.facebook.com");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.id("m_login_email")).sendKeys("username");
-
+        driver.quit();
 
     }
 

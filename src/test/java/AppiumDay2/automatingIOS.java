@@ -31,6 +31,7 @@ public class automatingIOS {
     public void execute(){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElementByAccessibilityId("Search").click();
+        driver.quit();
         appiumDriverLocalService.stop();
 
     }
